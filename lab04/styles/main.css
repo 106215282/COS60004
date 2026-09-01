@@ -1,0 +1,24 @@
+/* 
+filename: main.css
+author: nyny
+created: 1 Sep
+last modified: 1 Sep
+description: style for lab04task2.html
+*/
+
+body {
+    font-family: Arial;
+}
+
+article {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(images/background.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 158px;
+    width: 100%;
+}
