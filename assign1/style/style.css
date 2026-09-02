@@ -1,0 +1,108 @@
+/* 
+filename: main.css
+author: nyny
+created: 1 Sep
+last modified: 1 Sep
+description: style for all html pages 
+*/
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #E5E4E2;
+}
+
+body {
+    background-color: #555;
+}
+
+/* nav {
+    background-color: #555;
+    padding: 1.5em;
+} */
+
+nav {
+    margin: 1.5em; 
+}
+
+nav p {
+    display: inline-block;
+    padding-right: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    color: #F5F5F5;
+}
+
+#hero {
+    min-height: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#hero p {
+    font-size: 100px;
+    font-weight: 600;
+}
+
+#left_text {
+    text-align: right;
+}
+
+#normal_img {
+    position: relative;
+    z-index: 1;
+}
+
+#hover_img {
+    position: absolute;
+    z-index: 0;
+    
+}
+
+#normal_img:hover {
+    visibility: hidden;
+}
+
+footer {
+    height: 15em;
+    background-color: #2A3439;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer_text {
+    width: 40%;
+}
+
+#footer_text p {
+    padding-bottom: 0.5em;
+}
+
+.opacity {
+    opacity: 0.7;
+}
+
+ul li {
+    list-style: none;
+    padding: 0.5em;
+}
+
+li a {
+    text-decoration: none;
+}
