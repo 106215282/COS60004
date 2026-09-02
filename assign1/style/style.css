@@ -154,6 +154,7 @@ input:not([type="checkbox"]):not([type="radio"]), select {
 fieldset {
     padding: 0;
     color: #555;
+    border: 1px solid #2a34392a;
 }
 
 textarea {
@@ -175,6 +176,8 @@ textarea {
     background-color:#555;
     color: #E5E4E2;
 }
+
+/* style for about page */
 
 
 
