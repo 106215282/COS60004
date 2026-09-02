@@ -19,5 +19,80 @@
         <p><a href="about.html">About</a></p>
         <p><a href="enhancements.html">Enhancement</a></p>
     </nav>
+    <section id="contact_form">
+        <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+            <h1>Contact Us</h1>
+            <p>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required pattern="^[A-Za-z]{1,25}$">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required pattern="^[A-Za-z]{1,25}$">
+            </p>
+            <p>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required>
+                <label for="phoneNum">Phone Number</label>
+                <input type="text" name="phoneNum" id="phoneNum" required pattern="^[0-9]{1-10}$" placeholder="0123456789">
+            </p>
+            <fieldset>
+                <legend>Address</legend>
+                <p>
+                    <label for="street">Street Address</label>
+                    <input type="text" name="street" id="street" required pattern="^[A-Za-z0-9 ]{1,40}$">
+                    <label for="town">Suburb/town</label>
+                    <input type="text" name="town" id="town" required pattern="^[A-Za-z0-9 ]{1,20}$">
+                </p>
+                <p>
+                    <label for="state">State</label>
+                    <select name="state" id="state" required>
+                        <option value="" selected>Please Select</option>
+                        <option value="vic">VIC</option>
+                        <option value="nsw">NSW</option>
+                        <option value="qld">QLD</option>
+                        <option value="nt">NT</option>
+                        <option value="wa">WA</option>
+                        <option value="sa">SA</option>
+                        <option value="tas">TAS</option>
+                        <option value="act">ACT</option>
+                    </select>
+                    <label for="postcode">Postcode</label>
+                    <input type="number" name="postcode" id="postcode" required pattern="^[0-9]{4}$">
+                </p>
+            </fieldset>
+            <p>
+                <span>Preferred contact</span>
+                <input type="radio" name="contact" id="email" checked required>
+                <label class="label" for="email">Email</label>
+                <input type="radio" name="contact" id="post">
+                <label class="label" for="post">Post</label>
+                <input type="radio" name="contact" id="phone">
+                <label class="label" for="phone">Phone</label>
+            </p>
+            <p>
+                <label for="product">Product</label>
+                <select name="product" id="product" required>
+                    <option value="" selected>Please Select</option>
+                    <option value="vic">Pro1</option>
+                    <option value="nsw">Pro2</option>
+                    <option value="qld">Pro3</option>
+                </select>
+                <span>Product Features</span>
+                <input type="checkbox" name="feature[]" id="html" value="html" checked required>
+                <label class="label" for="html">Fea1</label>
+                <input type="checkbox" name="feature[]" id="css" value="css">
+                <label class="label" for="css">Fea2</label>
+                <input type="checkbox" name="feature[]" id="js" value="js">
+                <label class="label" for="js">Fea3</label>
+            </p>
+            <p>
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" placeholder="Please tell us your comment ..."></textarea>
+            </p>
+            <div id="button">
+                <input type="submit" value="Book">
+                <input type="reset" value="Reset form">
+            </div>
+        </form>
+    </section>
 </body>
 </html>

@@ -10,11 +10,11 @@ description: style for all html pages
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
     margin: 0;
-    color: #E5E4E2;
 }
 
 body {
     background-color: #555;
+    color: #E5E4E2;
 }
 
 /* nav {
@@ -33,6 +33,7 @@ nav p {
 
 nav a {
     text-decoration: none;
+    color: #E5E4E2;
 }
 
 a:hover {
@@ -51,7 +52,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
 }
 
 #hero p {
@@ -63,20 +64,19 @@ a:hover {
     text-align: right;
 }
 
-#normal_img {
+/* #normal_img {
     position: relative;
     z-index: 1;
-}
+} */
 
-#hover_img {
+/* #hover_img {
     position: absolute;
-    z-index: 0;
-    
-}
+    z-index: 0;  
+} */
 
-#normal_img:hover {
+/* #normal_img:hover {
     visibility: hidden;
-}
+} */
 
 footer {
     height: 15em;
@@ -105,4 +105,76 @@ ul li {
 
 li a {
     text-decoration: none;
+    color: #E5E4E2;
 }
+
+/* style for enquire page */
+
+
+#contact_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em ;
+}
+
+form {
+    background-color: #F5F5F5;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+form p{
+    padding: 1em;
+    color: #555;
+}
+
+form h1{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 1em;
+    color: #555;
+}
+
+label, span {
+    display: inline-block;
+    width: 9em;
+}
+
+.label {
+    width: 4em;
+}
+
+input:not([type="checkbox"]):not([type="radio"]), select {
+    width: 15em;
+    margin-right: 1em;
+    box-sizing: border-box;
+}
+
+fieldset {
+    padding: 0;
+    color: #555;
+}
+
+textarea {
+    width: 40em;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button input {
+    height: 2em;
+    border-radius: 5px;
+}
+
+#button input:hover {
+    background-color:#555;
+    color: #E5E4E2;
+}
+
+
+
