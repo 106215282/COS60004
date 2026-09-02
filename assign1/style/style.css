@@ -23,7 +23,10 @@ body {
 } */
 
 nav {
-    margin: 1.5em; 
+    padding: 1.5em; 
+    background-color: #2A3439;
+    /* position: fixed;
+    width: 100%; */
 }
 
 nav p {
@@ -98,7 +101,7 @@ footer {
     opacity: 0.7;
 }
 
-ul li {
+footer ul, footer li {
     list-style: none;
     padding: 0.5em;
 }
@@ -206,18 +209,18 @@ figure {
 figure img {
     width: 20em;
     padding: 20px;
-    border: 1px double #E5E4E2;
+    border-style: double;
 }
 
 figcaption {
     text-align: center;
 }
 
-table {
+#timetable {
     clear: both;
 }
 
-th, td {
+#timetable th, #timetable td {
     border: 1px solid;
     padding: 1em;
     background-color: #2A3439;
@@ -228,4 +231,47 @@ caption {
     font-size: 20px;
     padding: 1em 0;
 }
+
+/* style for product page */
+
+.card {
+    /* width: 80%; */
+    height: 30em;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+.card img {
+    width: 20em;
+}
+
+.technical_table {
+    text-align: left;
+}
+
+.technical_table th {
+    border-left: 3px solid;
+    padding-left: 1em;
+}
+
+.technical_table td {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 10em;
+}
+
+.product_info h1 {
+    font: bold 2em "Plus Jakarta Sans", sans-serif;
+}
+
+.product_info h1, 
+.product_info p, 
+.product_info h2,
+.product_info label
+ {
+    padding-bottom: 0.5em;
+}
+
 
