@@ -178,6 +178,54 @@ textarea {
 }
 
 /* style for about page */
+.container {
+    width: 80%;
+    margin: 5em auto;
+}
 
+#personal {
+    float: left;
+}
 
+dl {
+    width: 50em;
+}
+
+dt{
+    float: left;
+    width: 10em;
+}
+
+dt::after {
+    content: ": ";
+}
+
+figure {
+    float: right;
+}
+figure img {
+    width: 20em;
+    padding: 20px;
+    border: 1px double #E5E4E2;
+}
+
+figcaption {
+    text-align: center;
+}
+
+table {
+    clear: both;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 1em;
+    background-color: #2A3439;
+}
+
+caption {
+    font-weight: 800;
+    font-size: 20px;
+    padding: 1em 0;
+}
 
