@@ -263,7 +263,7 @@ caption {
     padding-bottom: 0.5em;
 }
 
-#price {
+.price {
     color: #8DB600;
     font-weight: 800;
 }
