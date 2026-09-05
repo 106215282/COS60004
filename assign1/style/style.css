@@ -17,16 +17,9 @@ body {
     color: #E5E4E2;
 }
 
-/* nav {
-    background-color: #555;
-    padding: 1.5em;
-} */
-
 nav {
     padding: 1.5em; 
     background-color: #2A3439;
-    /* position: fixed;
-    width: 100%; */
 }
 
 nav p {
@@ -55,7 +48,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
 }
 
 #hero p {
@@ -66,20 +58,6 @@ a:hover {
 #left_text {
     text-align: right;
 }
-
-/* #normal_img {
-    position: relative;
-    z-index: 1;
-} */
-
-/* #hover_img {
-    position: absolute;
-    z-index: 0;  
-} */
-
-/* #normal_img:hover {
-    visibility: hidden;
-} */
 
 footer {
     height: 15em;
@@ -232,13 +210,13 @@ caption {
 
 .card {
     width: 55%;
-    height: 30em;
+    max-height: 30em;
     background-color: #2A3439;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    gap: 1em;
     align-items: center;
+    gap: 1em;
     margin: 4em;
     padding: 2em;
 }
@@ -285,4 +263,18 @@ aside h2, aside ol {
 
 
 /* style for enhancement */
+.enhancement {
+    margin: 4em;
+    padding: 2em;
+    background-color: #2A3439;
+    border-radius: 10px;
+}
 
+.enhancement a {
+    text-decoration: none;
+    color: #E5E4E2;
+}
+
+.enhancement a:hover {
+    text-decoration: underline;
+}

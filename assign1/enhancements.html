@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="home page">
+    <meta name="keywords" content="HTML5, CSS">
+    <meta name="author" content="Nyny">
+    <title>Sparkling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <p class="logo">Sparkling</p>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="product.html">Product</a></p>
+        <p><a href="enquire.html">Enquire</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="enhancements.html">Enhancement</a></p>
+    </nav>
+    <section class="enhancement">
+        <h1>Using display: flex</h1>
+        <p>I have used display flex to easily align texts and images horizontally in <a href="index.html">Home page</a>.</p>
+        <pre>
+            <code>
+                #hero {
+                    min-height: 50em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            </code>
+        </pre>
+        <p>Reference: <a href="https://youtu.be/wsTv9y931o8?si=0_D2EvseHyS5gPbN" target="_blank"> Learn CSS Flexbox in 20 Minutes (Course)</a></p>
+    </section>
+    <section class="enhancement">
+        <h1>Using box-sizing: border-box</h1>
+        <p>I have use the border-box in <a href="enquire.html">Enquire page</a> to make sure the margin or padding are included in the width and height of the item. This makes the form looks cleaner.</p>
+        <pre>
+            <code>
+                input:not([type="checkbox"]):not([type="radio"]), select {
+                    width: 15em;
+                    margin-right: 1em;
+                    box-sizing: border-box;
+                }
+            </code>
+        </pre>
+        <p>Reference: <a href="https://youtu.be/HdZHcFWcAd8?si=TDpj3D4V9WIhQzVh" target="_blank">box-sizing: border-box (EASY!)</a></p>
+    </section>
+    <footer>
+        <div id="footer_text">
+            <p class="logo">Sparkling</p>
+            <p class="opacity">Trusted globally for outstanding performance, reliability, and innovation, Sparkling Dishwashers are engineered in Germany, to deliver powerful cleaning with whisper-quiet operation, efficient water and energy use, and thoughtful features.</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="enquire.html">Enquire</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="enhancements.html">Enhancement</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

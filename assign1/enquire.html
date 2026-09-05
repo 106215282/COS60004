@@ -32,7 +32,7 @@
                 <label for="email_addr">Email Address</label>
                 <input type="email" name="email_addr" id="email_addr" required>
                 <label for="phoneNum">Phone Number</label>
-                <input type="text" name="phoneNum" id="phoneNum" required pattern="^[0-9]{1-10}$" placeholder="0123456789">
+                <input type="text" name="phoneNum" id="phoneNum" required pattern="^[0-9]{1,10}$" placeholder="0123456789">
             </p>
             <fieldset>
                 <legend>Address</legend>
@@ -61,35 +61,35 @@
             </fieldset>
             <p>
                 <span>Preferred contact</span>
-                <input type="radio" name="contact" id="email" checked required>
+                <input type="radio" name="contact" id="email" value="email" checked>
                 <label class="label" for="email">Email</label>
-                <input type="radio" name="contact" id="post">
+                <input type="radio" name="contact" id="post" value="post">
                 <label class="label" for="post">Post</label>
-                <input type="radio" name="contact" id="phone">
+                <input type="radio" name="contact" id="phone" value="phone">
                 <label class="label" for="phone">Phone</label>
             </p>
             <p>
                 <label for="product">Product</label>
                 <select name="product" id="product" required>
                     <option value="" selected>Please Select</option>
-                    <option value="vic">Pro1</option>
-                    <option value="nsw">Pro2</option>
-                    <option value="qld">Pro3</option>
+                    <option value="semi">Series 8 semi-integrated</option>
+                    <option value="under">Series 6 built-under</option>
+                    <option value="standing">Series 6 free-standing</option>
                 </select>
                 <span>Product Features</span>
-                <input type="checkbox" name="feature[]" id="html" value="html" checked required>
-                <label class="label" for="html">Fea1</label>
-                <input type="checkbox" name="feature[]" id="css" value="css">
-                <label class="label" for="css">Fea2</label>
-                <input type="checkbox" name="feature[]" id="js" value="js">
-                <label class="label" for="js">Fea3</label>
+                <input type="checkbox" name="feature[]" id="ai" value="ai" checked>
+                <label class="label" for="ai">AI wash</label>
+                <input type="checkbox" name="feature[]" id="noise" value="noise">
+                <label class="label" for="noise">noise</label>
+                <input type="checkbox" name="feature[]" id="clean" value="clean">
+                <label class="label" for="clean">cleanliness</label>
             </p>
             <p>
                 <label for="comment">Comment</label>
                 <textarea name="comment" id="comment" placeholder="Please tell us your comment ..."></textarea>
             </p>
             <div id="button">
-                <input type="submit" value="Book">
+                <input type="submit" value="Submit">
                 <input type="reset" value="Reset form">
             </div>
         </form>
